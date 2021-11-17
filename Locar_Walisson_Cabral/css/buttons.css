@@ -5,7 +5,9 @@
     border-radius: 30px;
     padding: 10px 30px;
     font-size: 20px;
+    transition: ease .5s, all;
 }
 .btn:hover{
     background-color: rgba(54, 54, 54, 09);
 }
+ 

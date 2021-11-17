@@ -1,6 +1,14 @@
 @import url("reset.css");
 @import url("grid.css");
 @import url("buttons.css");
+@import url("icons.css");
+@import url("tipography.css");
+
+body{
+    font-family: 'open sans', sans-serif;
+    color:rgb(130, 130,130);
+}
+
 #header{
     background: url("../img/background-header.png")no-repeat;
     background-size: cover;
@@ -48,7 +56,48 @@ background-color: rgba(255, 0, 0, 09);
 #header h1{
     font-size: 54px;
 }
-#how-it-work{
+
+#team, #ours-vehicles, #how-it-work{
     text-align: center;
+    padding: 30px 0 30px 0;
 }
 
+#ours-vehicles{
+background-color: rgb(242,242,242);
+}
+#ours-vehicles .btn{
+    margin-top: 80px;
+    background-color: rgb(220, 220,220);
+    color:rgb(130, 130, 130);
+}
+#ours-vehicles .btn:hover{
+    background-color: rgb(130, 130, 130);
+    color:rgb(220, 220, 220);
+}
+#ours-vehicles .btn .material-icons{
+    vertical-align: center;
+    font-size: 20px;
+}
+
+#ours-vehicles .container{
+    max-width: 1000px;
+    height: 500px;
+}
+
+#ours-vehicles .container img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+#team{
+background-color: rgb(209, 67, 60);
+    color:white;
+}
+#team .img-box-round{
+    width: 120px;
+    height: 120px;
+}
+#team h2:after{
+    background-color: rgb(255, 255, 255);
+}
