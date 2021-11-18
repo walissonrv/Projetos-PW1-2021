@@ -1,0 +1,18 @@
+@import url("../stylesheet.css");
+
+#header.page-equipe{
+    background-image: url("../../img/background-equipe.jpg");
+}
+#team img{
+    pading-top:30px;}
+
+#team{
+    background-color:rgb(209, 67, 60);
+    color: white;
+}
+#team .img-box-round{
+    width: 120px;
+    height: 120px;
+}
+
+
