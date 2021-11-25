@@ -1,0 +1,45 @@
+@import url("../stylesheet.css");
+
+#header.page-contatos {
+    background-image: url("../../IMG/background-contato.jpg");
+}
+#contato{
+    background-color:rgba(243, 240, 231, 1) ;
+}
+.enviar {
+    width: 110px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(255, 215, 0);
+    border: 2px solid rgb(0,0,0);
+}
+.enviar:hover{
+    background-color: rgba(0, 0, 0,0.5);
+    transition: ease .5s, all;
+}
+#mensagem{
+    width:500px;
+    height: 150px;
+    font-size: 16px;
+}
+#telefone{
+    width: 500px;
+    height: 35px;
+    font-size: 16px;
+    margin: 10px;
+}
+#email{
+    width: 500px;
+    height: 35px;
+    font-size: 16px;
+    margin:10px;
+}
+#nome{
+    width: 500px;
+    height: 35px;
+    font-size: 16px;
+    margin:10px;
+    alignment: center;
+
+}

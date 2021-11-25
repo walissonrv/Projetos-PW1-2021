@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOCAR - Locadora de Veículos Quarto Período</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/pages/contato.css">
+</head>
+<body>
+<header id="header" class="page-contatos">
+    <div class="row">
+        <div class="col col-desktop-3"><a href="index.html"><img src="./img/Logo.png" alt="Logo da Locar"></a></div>
+        <div class="col col-desktop-9">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a href="#">Veículos</a></li>
+                    <li><a href="team.html">Equipe</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col col-desktop-12 title">
+                <h1>Te levando onde você quiser</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="contato" class="section section-center">
+        <h2>Nosso Contato</h2>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="container">
+            <form class="row" action="https://script.google.com/macros/s/AKfycbzMjI65SvRPFME6xr00ZnssXzuojWVbx-ZJ39rZjo5bBZ_0fS9u3ghFwuquhtOI0EIHSQ/exec" method="post">
+                <div class="col col-desktop-6">
+                    <div class="input-control">
+                        <input type="text" name="nome" id="nome" placeholder="Name">
+                        <label for="nome"></label>
+                    </div>
+                    <div class="input-control">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <label for="email"></label>
+                    </div>
+                    <div class="input-control">
+                        <input type="number" name="telefone" id="telefone" placeholder="Telefone">
+                        <label for="telefone"></label>
+                    </div>
+                </div>
+                    <div class="col col-desktop-6">
+                        <div class="input-control">
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="" placeholder="Mensagem"></textarea>
+                            <label for="mensagem"></label>
+                        </div>
+                    </div>
+                    <input  type="submit" value="Enviar" class="enviar">
+            </form>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col col-offset-desktop-1 col-desktop-3">
+                <p><a href="index.html"><img src="img/Logo.png" alt="" width="320" height="150"></a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisl ac turpis rhoncus rhoncus. Pellentesque varius urna ipsum. Ut</p>
+            </div>
+            <div class="col col-offset-desktop-1 col-desktop-2">
+                <h3>Menu</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quem-somos.html">Quem somos</a></li>
+                        <li><a href="#">Veículos</a></li>
+                        <li><a href="team.html" class="active">Equipe</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col col-desktop-3 social">
+                <a href=""><img src="img/social-facebook.png" alt=""></a>
+                <a href=""><img src="img/social-twitter.png" alt=""></a>
+                <a href=""><img src="img/social-youtube.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="copyright">
+    &copy; Locar - 2021 - Todos os direitos reservados
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $('form').submit(function (event){
+        event.preventDefault();
+        $('form [type="submit"]').val('Aguarde...').attr('disabled', true);
+        $.ajax({
+            type: $('form').attr('method'),
+            url: $('form').attr('action'),
+            data: $('form').serialize(),
+            success:function (){
+                alert('Email enviado com sucesso!');
+                $('form').trigger('reset');
+                $('form [type="submit"]').val('Enviar').attr('disabled', false);
+            }
+        });
+    });
+</script>
+</body>
+</html>

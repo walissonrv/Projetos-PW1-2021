@@ -13,6 +13,34 @@
 #team .img-box-round{
     width: 120px;
     height: 120px;
+    border: 2px solid rgb(209,81,69);
+}
+#team .img-box-label:before{
+    display: none;
+}
+#team .row:first-child{
+    margin-bottom: 40px;
+}
+.team-member:hover .description{
+    display: block;
+}
+.team-member{
+    position: relative;
 }
 
+.team-member .description{
+    background-color: rgba(0,0,0,7);
+    color: white;
+    border: 5px solid rgba(0,0,0,0.3);
+    width: 400px;
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    z-index: 99;
+}
+.team-member:nth-child(4) .description, .team-member:nth-child(5) .description{
+    left:auto;
+    right: 50%;
+}
 
