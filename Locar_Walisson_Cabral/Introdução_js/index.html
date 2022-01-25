@@ -7,13 +7,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <a href="index.html" id="navTitle" class="navbar-brand"></a>
             </div>
         </nav>
     </header>
-    <main>
+    <main style="padding-top: 80px; margin-bottom: 80px">
         <div class="container-fluid">
             <div id="errors" style="display: none"></div>
             <div class="row row-cols-lg-auto g-3 align-items-center">
@@ -42,6 +42,13 @@
             </table>
         </div>
     </main>
+    <footer>
+        <nav class="navbar navbar-light  bg-light fixed-bottom">
+            <div class="container-fluid">
+                <h4 class="text-center text-sucess">Total: <span id="totalValue">R$: 0,00</span></h4>
+            </div>
+        </nav>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>

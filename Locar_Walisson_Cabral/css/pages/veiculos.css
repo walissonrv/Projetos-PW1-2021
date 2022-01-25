@@ -1,0 +1,15 @@
+@import url("../stylesheet.css");
+
+#header.page-veiculos {
+    background-image: url("../../img/background-veiculos.jpg");
+}
+.section-veiculos{
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+.img-veiculo{
+    width: 300px;
+    height: 220px;
+    padding: 5px 0 5px 0;
+    border: 1px solid black;
+}

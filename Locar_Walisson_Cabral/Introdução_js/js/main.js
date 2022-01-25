@@ -33,6 +33,8 @@ function setlist(list){
     }
     table+= '</tbody>';
     document.getElementById("listtable").innerHTML=table;
+    document.getElementById("totalValue").innerHTML= formatValue(gettotal(list));
+    saveListStorage(list);
 }
 function  formatDescription(description){
     var str= description.toLowerCase(); // converte tudo para minusculo
@@ -125,4 +127,15 @@ function validation(){
     }
     return 1;
 }
-setlist(list);
+function saveListStorage(list){
+    var jsonStr=JSON.stringify(list);
+    localStorage.setItem("list", jsonStr);
+}
+function initListStorage(){
+    var listStorage= localStorage.getItem('list');
+    if(listStorage){
+        list=JSON.parse(listStorage);
+    }
+    setlist(list);
+}
+initListStorage();
